@@ -1,0 +1,123 @@
+@font-face {
+    font-family: barcelony;
+    src: url("font/Barcelony.ttf");
+    
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background:linear-gradient(
+        to bottom, 
+        #9f0311 0%,
+        #9f0311 20%,
+        #ffff 20%,
+        #ffff 100%);
+        min-height: 100vh;
+} 
+/* SECTION 1 */
+
+.banner{
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.navbar{
+    background-color: #e9eaea;
+    padding:0 6.5rem;
+}
+.navbar-brand{
+    font-family: barcelony;
+    color: #9f0311!important;
+    font-size: 1.65rem !important;
+}
+.nav-item{
+    padding:0 1rem;
+}
+.fa-phone{
+    color: #000;
+    margin-right: .65rem;
+}
+.number{
+    color: #000;
+}
+.fa-brands{
+    color: #9f0311;
+    font-size: 1.25rem;
+    margin-left: 0.65rem;
+
+}
+.head h1{
+    font-family: "barcelony";
+    padding-top: 5rem;
+    font-size: 4rem;
+    width: 25vw;
+    text-align: center;
+}
+#btn1{
+    color: #9f0311!important;
+    border-color: #9f0311 !important;
+    padding:.5rem 3rem !important;
+    border-radius: 0% !important;
+    font-size: 1rem;  
+}
+
+/* SECTION 2 */
+.catalog{
+    background-color: #e9eaea;
+}
+#catalog,#about{
+    font-family: barcelony;
+    font-size: 2rem;
+}
+.items{
+    padding:1rem;
+    text-decoration: none;
+    color:#000;
+
+}
+#column1{
+    background-color: #9f0311;
+    padding: 4rem 0;
+}
+#fill{
+    font-family: barcelony;
+    color: #fff;
+}
+.flavour{
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1;
+}
+#btn2{
+    color: #fff;
+    border-color: #fff;
+    border-radius: 0% !important;
+    padding: 0.5rem 6rem;
+    text-transform: capitalize;
+}
+.box{
+    width:18vw;
+}
+.image{
+    height: 35vh;
+    width: 18vw;
+}
+/* ABOUT US */
+.about{
+    background-color: #e9eaea;
+}
+
+.logo{
+    color: #9f0311;
+    font-family: barcelony;
+    font-size: 1.5rem;
+    border-top: 1.5px solid #9f0311;
+    width: 12vw;
+    margin: auto;
+}
