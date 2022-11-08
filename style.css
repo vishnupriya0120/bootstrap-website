@@ -14,8 +14,8 @@ body{
     background:linear-gradient(
         to bottom, 
         #9f0311 0%,
-        #9f0311 20%,
-        #ffff 20%,
+        #9f0311 10%,
+        #ffff 10%,
         #ffff 100%);
         min-height: 100vh;
 } 
@@ -31,10 +31,11 @@ body{
     background-color: #e9eaea;
     padding:0 6.5rem;
 }
-.navbar-brand{
+.brand{
     font-family: barcelony;
-    color: #9f0311!important;
-    font-size: 1.65rem !important;
+    color: #9f0311;
+    font-size: 1.65rem;
+    text-decoration: none;
 }
 .nav-item{
     padding:0 1rem;
@@ -46,7 +47,7 @@ body{
 .number{
     color: #000;
 }
-.fa-brands{
+.fa{
     color: #9f0311;
     font-size: 1.25rem;
     margin-left: 0.65rem;
@@ -85,7 +86,7 @@ body{
     background-color: #9f0311;
     padding: 4rem 0;
 }
-#fill{
+#fill,#offer{
     font-family: barcelony;
     color: #fff;
 }
@@ -105,8 +106,7 @@ body{
     width:18vw;
 }
 .image{
-    height: 35vh;
-    width: 18vw;
+    max-width:100%;
 }
 /* ABOUT US */
 .about{
@@ -116,8 +116,222 @@ body{
 .logo{
     color: #9f0311;
     font-family: barcelony;
-    font-size: 1.5rem;
-    border-top: 1.5px solid #9f0311;
-    width: 12vw;
+    /* font-size: 1.5rem; */
+    border-top: 2px solid #9f0311;
+    width: 10vw;
     margin: auto;
+    margin-top: 1.5rem;
+}
+.logo h3{
+    font-size: 1.5rem;
+}
+
+/* SPECIAL OFFER */
+.offer{
+    background-color: #e9eaea;
+}
+.special{
+    background-color: #9f0311;
+}
+#btn3{
+    padding:.5rem 6rem;
+}
+.reviews{
+    background-color: #e9eaea;
+}
+#review{
+    font-family: barcelony;
+    font-size: 3rem;
+}
+.rev{
+    line-height: 2;
+    padding: 1rem 23rem;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-image: none !important;
+    color:#9f0311 !important;
+    font-size: 1.5rem;
+}
+.name{
+    font-family: barcelony;
+    font-size: 1.5rem;
+    color: #9f0311;
+    text-transform: capitalize;
+}
+/* CONTACT */
+.contact{
+    background-color: #e9eaea;
+}
+.contact-img{
+    background-image: url(images/contact.jpg);
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.contact-info{
+    background-color: #9f0311;
+}
+#contact{
+    font-family: barcelony;
+    font-size: 1.5rem;
+}
+#divide{
+    border-bottom: #fff  solid 1px;
+    width:3rem;
+}
+/* APPLICATION */
+.application{
+    background-color: #e9eaea;
+}
+#app{
+    font-family: barcelony;
+    font-size: 2rem;
+}
+.form-control{
+    background: none !important;
+    border:0px solid #ced4da !important;
+    padding: .75rem !important;
+    border-bottom: #9f0311 2px solid !important;
+    border-radius: 0% !important;
+    text-transform: capitalize;
+}
+#btn4{
+    background-color: #9f0311;
+    color: #fff;
+    border-radius: 0% !important;
+}
+/* FOOTER */
+.footer{
+    background-color: #e9eaea;
+}
+.footer-row{
+    background-color: #9f0311;
+    padding: 1.5rem;
+}
+.footer-link{
+    flex-direction: row;
+}
+.footer-brand{
+    text-decoration: none;
+    font-family: barcelony;
+    font-size: 1.55rem;
+    color: #fff;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 .7rem;
+}
+.foot{
+    color: #fff;
+    margin-left: .7rem;
+    font-size: 1.5rem;
+}
+
+/* MEDIAQUERIES */
+@media(min-width:2558px){
+    .brand{
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link,.number {
+        font-size: 1.7rem;
+    }
+    .fa-phone,.fa{
+        font-size: 2rem;
+        margin:0 1rem
+    }
+    .head h1{
+        padding-top: 10rem;
+        font-size: 7rem;
+    }
+    #btn1{
+      padding: 1rem 5rem !important;
+      font-size: 1.65rem;
+    }
+    #catalog, #about {
+        font-family: barcelony;
+        font-size: 4rem;
+        margin-top: 4rem;
+    }
+    .items {
+        padding: 3rem;
+        font-size: 1.7rem;
+    } 
+    #fill, #offer {
+        line-height: 2;
+        margin-top: 1rem;
+        font-size: 4rem;
+    }   
+    .fill-text{
+        line-height: 2;
+        font-size: 1.85rem;
+    }
+    .flavour p{
+        line-height: 1.5;
+        font-size: 1.85rem;
+    }
+    #btn2{
+        font-size: 1.85rem;
+        padding: 1rem 10rem;
+    }
+    .about-info {
+        font-size:1.85rem ;
+        margin-bottom: 4rem;
+    }
+    .logo h3 {
+        padding-top:1rem ;
+        font-size: 2.75rem;
+    }
+    .offer-info{
+        font-size: 2rem;
+        margin-bottom: 6rem;
+    }
+    #btn3 {
+        padding: 1rem 10rem;
+        font-size: 2rem;
+    }
+    #review{
+        font-size: 6rem;
+    }
+    .rev{
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    .name{
+        font-size: 3rem;
+    }
+    #contact{
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    .contact-box{
+        padding: 3rem 6rem;
+    }
+    .contact-text p{
+        font-size: 1.85rem;
+    }
+    #app{
+        font-size: 4rem;
+    }
+    .form-control{
+        font-size: 1.7rem!important;
+    }
+    #btn4{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+    }
+    .footer-row{
+        padding-top: 3rem;
+    }
+    .footer-brand{
+        font-size: 3rem;
+    }
+    .link{
+        font-size: 1.7rem;
+    }
+    .foot{
+        margin-left: 2rem;
+        font-size: 2.5rem;
+    }
 }
