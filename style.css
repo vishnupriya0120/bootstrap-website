@@ -177,6 +177,7 @@ p,.form-control,.btn,a{
 
 /* REVIEWS */
 .reviews{
+    padding-top: 3rem;
     background-color: #e9eaea;
 }
 #review{
@@ -312,7 +313,7 @@ p,.form-control,.btn,a{
     #catalog, #about {
         font-family: barcelony;
         font-size: 4rem;
-        margin-top: 4rem;
+        padding-top: 4rem;
     }
     .items {
         padding: 3rem;
