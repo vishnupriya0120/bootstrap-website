@@ -3,6 +3,10 @@
     src: url("font/Barcelony.ttf");
     
 }
+@font-face{
+    font-family: gotham;
+    src:url("font/Gotham.ttf");
+}
 *{
     margin:0;
     padding:0;
@@ -19,6 +23,10 @@ body{
         #ffff 100%);
         min-height: 100vh;
 } 
+p,.form-control,.btn,a{
+    font-family: gotham;
+    font-size: .9rem;
+}
 /* SECTION 1 */
 
 .banner{
@@ -26,6 +34,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+.wrapper{
+    padding: 3rem;
 }
 .navbar{
     background-color: #e9eaea;
@@ -39,6 +50,7 @@ body{
 }
 .nav-item{
     padding:0 1rem;
+    
 }
 .fa-phone{
     color: #000;
@@ -62,14 +74,20 @@ body{
 }
 #btn1{
     color: #9f0311!important;
+    font-family: gotham;
     border-color: #9f0311 !important;
     padding:.5rem 3rem !important;
     border-radius: 0% !important;
-    font-size: 1rem;  
+    font-size: .9rem;  
 }
 
 /* SECTION 2 */
+.row-catalog{
+    margin-left: 3rem!important;
+    margin-right: 3rem!important;
+}
 .catalog{
+    padding: 3rem!important;
     background-color: #e9eaea;
 }
 #catalog,#about{
@@ -90,6 +108,10 @@ body{
     font-family: barcelony;
     color: #fff;
 }
+.fill-text{
+    padding:0 3rem;
+    margin-bottom: 3rem;
+}
 .flavour{
     color: #fff;
     text-transform: capitalize;
@@ -98,25 +120,27 @@ body{
 #btn2{
     color: #fff;
     border-color: #fff;
+    margin-top: 1rem;
+    font-size: .9rem;
     border-radius: 0% !important;
-    padding: 0.5rem 6rem;
+    padding: 0.5rem 5rem;
     text-transform: capitalize;
-}
-.box{
-    width:18vw;
 }
 .image{
     max-width:100%;
 }
-/* ABOUT US */
-.about{
-    background-color: #e9eaea;
+.w-100{
+    margin:.5rem;
 }
 
+/* ABOUT US */
+.about{
+    padding: 3rem;
+    background-color: #e9eaea;
+}
 .logo{
     color: #9f0311;
     font-family: barcelony;
-    /* font-size: 1.5rem; */
     border-top: 2px solid #9f0311;
     width: 10vw;
     margin: auto;
@@ -129,13 +153,29 @@ body{
 /* SPECIAL OFFER */
 .offer{
     background-color: #e9eaea;
+    padding: 3rem;
+}
+.offer-row{
+    padding: 0 3rem !important;
+}
+#offer{
+    padding-top: 3rem;
+}
+.offer-info{
+    padding: 1.25rem;
+    font-size: 1rem;
 }
 .special{
     background-color: #9f0311;
+    padding: 3rem 1rem;
 }
 #btn3{
+    margin-top: 2rem;
     padding:.5rem 6rem;
+    font-size: .9rem;
 }
+
+/* REVIEWS */
 .reviews{
     background-color: #e9eaea;
 }
@@ -158,8 +198,10 @@ body{
     color: #9f0311;
     text-transform: capitalize;
 }
+
 /* CONTACT */
 .contact{
+    padding: 3rem;
     background-color: #e9eaea;
 }
 .contact-img{
@@ -167,9 +209,14 @@ body{
     max-width: 100%;
     background-position: center;
     background-size: cover;
+    margin: 3rem !important;
+}
+.contact-out{
+    padding: 3rem!important;
 }
 .contact-info{
     background-color: #9f0311;
+    padding: 3rem;
 }
 #contact{
     font-family: barcelony;
@@ -179,6 +226,7 @@ body{
     border-bottom: #fff  solid 1px;
     width:3rem;
 }
+
 /* APPLICATION */
 .application{
     background-color: #e9eaea;
@@ -198,21 +246,30 @@ body{
 #btn4{
     background-color: #9f0311;
     color: #fff;
+    font-size: .9rem;
     border-radius: 0% !important;
 }
+.row-form{
+    margin-top: 1.5rem;
+}
+
 /* FOOTER */
 .footer{
+    padding:0 3rem;
     background-color: #e9eaea;
 }
 .footer-row{
     background-color: #9f0311;
     padding: 1.5rem;
+    margin:0 3rem;
 }
 .footer-link{
     flex-direction: row;
+   
 }
 .footer-brand{
     text-decoration: none;
+    text-align: left;
     font-family: barcelony;
     font-size: 1.55rem;
     color: #fff;
@@ -220,12 +277,15 @@ body{
 .link{
     text-decoration: none;
     color: #fff;
-    margin: 0 .7rem;
+    margin: 1rem;
 }
 .foot{
     color: #fff;
     margin-left: .7rem;
     font-size: 1.5rem;
+}
+.footer-end{
+    text-align: right;
 }
 
 /* MEDIAQUERIES */
@@ -258,6 +318,9 @@ body{
         padding: 3rem;
         font-size: 1.7rem;
     } 
+    #column1 {
+        padding: 7rem 0;
+    }    
     #fill, #offer {
         line-height: 2;
         margin-top: 1rem;
@@ -272,6 +335,7 @@ body{
         font-size: 1.85rem;
     }
     #btn2{
+        margin-top: 5rem;
         font-size: 1.85rem;
         padding: 1rem 10rem;
     }
@@ -308,6 +372,10 @@ body{
     .contact-box{
         padding: 3rem 6rem;
     }
+    #divide {
+        border-bottom: #fff solid 2px;
+        width: 6rem;
+    }    
     .contact-text p{
         font-size: 1.85rem;
     }
@@ -329,9 +397,279 @@ body{
     }
     .link{
         font-size: 1.7rem;
+        /* margin: 2rem; */
     }
     .foot{
         margin-left: 2rem;
         font-size: 2.5rem;
     }
+}
+
+@media(max-width:1285px){
+    .navbar {
+        padding: 0 2rem;
+    }
+    .nav-item{
+        padding: 0;
+    }
+    .brand{
+        font-size: 1.45rem;
+    }
+    .nav-link {
+        font-size: .85rem;
+    }
+    .head h1 {
+        font-size: 3rem;
+    }  
+    .row-catalog {
+        margin-left: 0rem!important;
+        margin-right: 0rem!important;
+    }  
+    .catalog {
+        padding: 3rem 1rem!important;
+    }  
+    #column1 {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    #fill, #offer {
+        font-size: 1.75rem;
+    }
+    .fill-text {
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }   
+    p, .form-control, .btn, a {
+        font-family: gotham;
+        font-size: .8rem;
+    }
+    #btn2{
+        font-size: .8rem;
+        padding: 0.5rem 3rem;
+    }
+    .logo{
+        width: 15vw;
+    }
+    .special{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .offer-row {
+        padding:0rem !important;
+    }
+    #offer{
+        padding-top: 1.5rem;
+    }
+    .offer-info{
+        padding: 1rem 0rem;
+        font-size: .8rem;
+    }
+    #btn3 {
+        padding: 0.5rem 4rem;
+        font-size: .8rem;
+        margin-top: 0;
+    }
+    .rev {
+        padding: 2rem 10rem;
+    }
+    .contact-out{
+        padding: 2rem!important;
+    }
+    .contact-img{
+        margin: 0 !important;
+    }
+    .contact-info{
+        padding: 2rem 1rem;
+    }
+    .form-control,#btn4{
+        font-size:0.8rem;
+    }
+    .footer-row{
+        margin:0;
+    }
+    .footer-brand{
+        font-size: 1.25rem;
+    }
+    .link{
+        margin: .75rem;
+    }
+
+}
+@media(max-width:950px){
+    .head h1{
+        width:35vw;
+    }
+    .row-catalog{
+        padding: 2rem;
+    }
+    .w-100{
+        margin: 0;
+    }
+    #column1{
+        padding: 4rem 0;
+        margin-bottom: 2rem;
+    }
+    .image{
+        margin-bottom: 2rem;
+    }
+    .logo{
+        width:20vw;
+    }
+    .offer-row{
+        padding: 0 1rem !important;
+    }
+    .special{
+        padding: 3rem;
+        margin-bottom: 2rem;
+    }
+    .rev {
+        padding: 2rem 8rem;
+    }
+    .form-control{
+        font-size: .8rem!important;
+    }
+    .link{
+        margin: .5rem;
+    }
+    .footer-start{
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .footer-end{
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .row-form{
+        margin-top: 0;
+    }
+
+}
+@media(max-width:550px){
+    .navbar {
+        padding: 0 0.5rem;
+    }
+    .head h1 {
+        width: 52vw;
+        font-size: 2.5rem;
+    }
+    .logo {
+        width: 40vw;
+    }
+    .offer{
+        padding: 2rem;
+    }
+    .offer-info{
+        padding: 1rem;
+    }
+    .rev {
+        padding: 2rem 3rem;
+    }
+    .contact{
+        padding: 2rem 1em !important;
+    }
+    .contact-out {
+        padding: 0.5rem!important;
+    }
+    .contact-info {
+        padding: 2rem 0.5rem;
+    }
+    .footer-start{
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+    .link{
+        margin:0 2rem;
+    }
+    .footer-end{
+        margin:0;
+    }
+}
+@media(max-width:395px){
+    .brand {
+       font-size: 1.25rem;
+    }
+    .head h1{
+        font-size: 2.25rem;
+    }
+    .catalog {
+        padding: 3rem 2rem!important;
+    }
+    #catalog,#about,#app{
+        font-size: 1.75rem;
+    }
+    .row-catalog{
+        padding: 0;
+    }
+    .about {
+        padding: 2rem;
+    }
+    .about-info,.offer-info,.fill-text,.flavour p,a{
+        font-size: .7rem;
+    }
+    .logo{
+        width:35vw;
+    }
+    .logo h3 {
+        font-size: 1.35rem;
+    }
+    .offer {
+        padding: 1rem;
+    }
+    .rev {
+        font-size: .7rem;
+        padding: 2rem 2.5rem;
+    }
+    .contact-text p{
+        font-size: .62rem;
+    }
+    .form-control,#btn1,#btn2,#btn3,#btn4{
+        font-size: .7rem!important;
+    }
+    .link {
+        margin: 0 1rem;
+        font-size: .7rem;
+    }
+}
+@media(max-width:370px){
+    .wrapper{
+        padding: 1rem;
+    }
+    .brand{
+        font-size: 1.1rem;
+    }
+    .head h1{
+        font-size: 1.75rem;
+    }
+    .catalog {
+        padding: 3rem 1rem!important;
+    }
+    .about {
+        padding: 1.5rem;
+    }
+    .about-info, .offer-info, .fill-text, .flavour p, a {
+        font-size: .6rem;
+    }
+    .logo {
+        width: 42vw;
+    }
+    #btn3 {
+        padding: 0.5rem 3rem;
+    }
+    .rev {
+        font-size: .6rem;
+        padding: 1rem 2.5rem;
+    }
+    .contact-out {
+        padding: 0.25rem!important;
+    }
+    .contact-text p {
+        font-size: .57rem;
+    }  
+        
+}
+@media(max-width:281px){
+    .footer {
+        padding: 0 2rem;
+    }    
+
 }
