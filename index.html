@@ -13,7 +13,7 @@
 
     <div class="container-fluid">
         <div class="wrapper">
-            <div class="banner">
+            <div class="banner" id="main">
                 <!-- NAVIGATION BAR -->
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid py-2">
@@ -24,22 +24,22 @@
                       <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav text-capitalize mx-auto">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Main</a>
+                            <a class="nav-link active" aria-current="page" href="#main">Main</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">catalog</a>
+                            <a class="nav-link" href="#catalog1">catalog</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">about us</a>
+                            <a class="nav-link" href="#aboutus">about us</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link">special offer</a>
+                            <a class="nav-link" href="#specialoffer">special offer</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link">reviews</a>
+                            <a class="nav-link" href="#reviews">reviews</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link">contacts</a>
+                            <a class="nav-link" href="#contacts">contacts</a>
                           </li>
                         </ul>
                         <div class="nav-contact">
@@ -56,7 +56,7 @@
                   </div>
             </div>
             <!-- CATALOG -->
-            <div class="catalog">
+            <div class="catalog" id="catalog1">
               <h3 class=" text-center" id="catalog"> Our catalog</h3>
               <div class="category d-flex mx-auto justify-content-center text-capitalize">
                   <a href="#" class="items">cakes</a>
@@ -116,7 +116,7 @@
               </div>
             </div>
             <!-- ABOUT US -->
-            <div class="about">
+            <div class="about" id="aboutus">
               <div class="row">
                 <div class="col-2"></div>
                 <div class="col-lg-8 col-xs-12">
@@ -128,7 +128,7 @@
               </div>
             </div>
             <!-- SPECIAL OFFER -->
-            <div class="offer">
+            <div class="offer" id="specialoffer">
               <div class="row offer-row">
                 <div class="col-lg-4 col-xs-12 special text-center lh-lg">
                   <h3 id="offer" class="">Special offer</h3>
@@ -141,7 +141,7 @@
               </div>
             </div>
             <!-- REVIEWS -->
-            <div class="reviews text-center">
+            <div class="reviews text-center" id="reviews">
               <h3 id="review" class="fw-bold ">"</h3>
               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -175,7 +175,7 @@
               </div>
             </div>
             <!-- CONTACTS -->
-            <div class="contact">
+            <div class="contact" id="contacts">
               <div class="row contact-img py-4">
                 <div class="col-7"></div>
                 <div class="col-lg-5 contact-out col-xs-12">
@@ -201,7 +201,7 @@
             </div>
 
             <!--APPLICATION-->
-            <div class="application pb-5">
+            <div class="application pb-5" id="application">
               <h3 id="app" class="text-center text-capitalize">application</h3>
               <div class="row">
                 <div class="col-2"></div>
@@ -245,12 +245,12 @@
                   <a href="#" class="footer-brand">cake bakery</a>
                 </div>
                 <div class="col-lg-8 col-xs-6 text-center">
-                      <a class="link" href="#">Main</a>
-                      <a class="link" href="#">catalog</a>
-                      <a class="link" href="#">about us</a>
-                      <a class="link">special offer</a>
-                      <a class="link">reviews</a>
-                      <a class="link">contacts</a>
+                      <a class="link" href="#main">Main</a>
+                      <a class="link" href="#catalog1">catalog</a>
+                      <a class="link" href="#aboutus">about us</a>
+                      <a class="link" href="#specialoffer">special offer</a>
+                      <a class="link" href="#reviews">reviews</a>
+                      <a class="link" href="#contacts">contacts</a>
                 </div>
                 <div class="col-lg-2 col-xs-12 footer-end">
                   <a href="#" class="footer-contact"><i class="foot fa-brands fa-instagram"></i></a>
@@ -262,6 +262,7 @@
     </div>
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>  
 </body>
